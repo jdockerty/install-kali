@@ -9,6 +9,8 @@ Remember that Kali Linux is a professional security operating system, it comes p
 
 #### Prerequisites
 
+Firstly, be sure that you have virtualisation enabled on your machine. To check this for Windows, [visit here](https://stackoverflow.com/questions/49005791/how-to-check-if-intel-virtualization-is-enabled-without-going-to-bios-in-windows), and for Ubuntu Linux, [visit here](https://stackoverflow.com/questions/11116704/check-if-vt-x-is-activated-without-having-to-reboot-in-linux). If your operating system is not here, a simple Google search for `"Check virtualisation enabled <your_os>"` and `"How to enable virtualisation for <your_os>"` will suffice.
+
 Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) as this is the default provider to the upcoming software used in this repository. In doing so, you keep the installation process standardised an simpler to troubleshoot.
 
 Afterwards, download [Vagrant](https://www.vagrantup.com/downloads) as this is the software which enables distribution of a virtual machine image that is already configured, making it the installation process repeatable.
