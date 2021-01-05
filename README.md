@@ -7,17 +7,19 @@ Remember that Kali Linux is a professional security operating system, it comes p
 
 ## Installation
 
-#### Prerequisites
+### Prerequisites
 
-Firstly, be sure that you have virtualisation enabled on your machine. To check this for Windows, [visit here](https://stackoverflow.com/questions/49005791/how-to-check-if-intel-virtualization-is-enabled-without-going-to-bios-in-windows), and for Ubuntu Linux, [visit here](https://stackoverflow.com/questions/11116704/check-if-vt-x-is-activated-without-having-to-reboot-in-linux). If your operating system is not here, a simple Google search for `"Check virtualisation enabled <your_os>"` and `"How to enable virtualisation for <your_os>"` will suffice.
+Firstly, be sure that you have virtualisation enabled on your machine. To check this for Windows, [visit here](https://stackoverflow.com/questions/49005791/how-to-check-if-intel-virtualization-is-enabled-without-going-to-bios-in-windows), and for Ubuntu Linux, [visit here](https://stackoverflow.com/questions/11116704/check-if-vt-x-is-activated-without-having-to-reboot-in-linux). If your operating system is not here, a simple Google search for `"Check virtualisation enabled <your_os>"` and `"How to enable virtualisation for <your_os>"` will suffice. 
 
-Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) as this is the default provider to the upcoming software used in this repository. In doing so, you keep the installation process standardised an simpler to troubleshoot.
+**Make sure you download the appropriate software for your operating system, do not download Linux binaries if you are on Windows.**
+
+Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) as this is the default provider to the upcoming software used in this repository. In doing so, you keep the installation process standardised and simpler to troubleshoot.
 
 Afterwards, download [Vagrant](https://www.vagrantup.com/downloads) as this is the software which enables distribution of a virtual machine image that is already configured, making it the installation process repeatable.
 
-Now, ensure you have [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your computer, follow the relevant instructions for your current operating system. If you are unsure, then run the command `git --version` in your terminal/console window, if you see an error, this means you do not have it installed. 
+Now, ensure you have [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your computer. If you are unsure, run the command `git --version` in your terminal/console window, if you see an error returned, this means you do not have it installed. 
 
-#### Usage
+### Usage
 
 Once you have everything installed, clone the repository to get the files and change the current directory to the folder which was just created.
 
@@ -29,7 +31,7 @@ By default Vagrant uses VirtualBox as a provider to serve the virtual machine. B
 
     vagrant up
 
-This command will take some time, whilst the virtual machine is downloaded and loaded into virtual box for you. A timer will be displayed that estimates the remaining time to wait.
+This command will take some time, whilst the virtual machine is downloaded and loaded into VirtualBox for you. A timer will be displayed that estimates the remaining time to wait.
 
 When prompted which network should be bridged to, select the network adapter which is the main one for your computer, do not select a "loopback adapter". An example of this is shown below
 
