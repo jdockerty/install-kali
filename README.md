@@ -29,14 +29,19 @@ By default Vagrant uses VirtualBox as a provider to serve the virtual machine. B
 
 This command will take some time, whilst the virtual machine is downloaded and loaded into virtual box for you. A timer will be displayed that estimates the remaining time to wait.
 
-When prompted which network should be bridged to, select the network adapter which is the main one for your computer, do not select a "loopback adapter".
+When prompted which network should be bridged to, select the network adapter which is the main one for your computer, do not select a "loopback adapter". An example of this is shown below
 
+![Network adapter](images/network-interface.png)
+
+In this example, we select 1, as this is our main network interface card.
 
 Once up, default credentials to the machine will be
 
     Username: vagrant
     Password: vagrant
 
-If you wish to turn off the machine at any point, you can either do this from inside of the virtual machine itself or using the command `vagrant halt`, this will gracefully shutdown the machine.
+This is displayed upon completion, but also serves as a reminder here. You may wish to create your own user, although this is out of the scope for this walkthrough.
 
-Vagrant will install the virtual machine with predefined hardware specifications, if you wish to alter these, then you can do so from the interface of the VirtualBox or VMWare application.
+If you wish to turn off the machine at any point, you can either do this from inside of the virtual machine itself or using the command `vagrant halt` on your home computer, this will gracefully shutdown the machine.
+
+Vagrant will install the virtual machine with predefined hardware specifications, if you wish to alter these, then you can do so from the interface of the VirtualBox application.
