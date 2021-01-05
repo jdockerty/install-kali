@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "kalilinux/rolling"
+  config.vm.define "kali_linux"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -27,9 +28,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
       vb.gui = true
+      vb.name = "kali_linux"
   end
 
-  config.vm.post_up_message = "Kali is running\nuser:vagrant\npassword:vagrant"
+  config.vm.post_up_message = "Kali is now running\nUse the credentials below to log in:\n\tuser: vagrant\n\tpassword: vagrant"
 
 
   # Enable provisioning with a shell script. Additional provisioners such as
