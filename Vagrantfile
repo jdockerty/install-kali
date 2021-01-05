@@ -26,6 +26,7 @@ Vagrant.configure("2") do |config|
   # your network.
   config.vm.network "public_network"
 
+  # Enable the GUI and label the machine for the user.
   config.vm.provider "virtualbox" do |vb|
       vb.gui = true
       vb.name = "kali_linux"
@@ -33,12 +34,4 @@ Vagrant.configure("2") do |config|
 
   config.vm.post_up_message = "Kali is now running\nUse the credentials below to log in:\n\tuser: vagrant\n\tpassword: vagrant"
 
-
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
-  # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
 end
